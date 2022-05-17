@@ -1,0 +1,14 @@
+name: jax-tutorial
+channels:
+  - pytorch
+dependencies:
+  - python=3.9
+  - pyarrow
+  - numba
+  - click
+  - pip
+  - pip:
+    - jax==0.3.6
+    - jaxlib==0.3.5 
+    - flax==0.4.1
+    - tensorboardX==2.5
