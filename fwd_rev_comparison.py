@@ -69,9 +69,9 @@ def main():
   plt.legend()
   plt.xlabel("n")
   plt.ylabel("compute time")
-  plt.title("VJP and JVP performance comparison")
+  plt.title("Forward and reverse mode differentiation performance comparison")
   plt.tight_layout()
-  plt.savefig("jvp_vjp_comparison", dpi = 100)
+  plt.savefig("fwd_rev_comparison", dpi = 100)
   
 
 if __name__=="__main__":
