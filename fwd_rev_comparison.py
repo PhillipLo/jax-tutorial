@@ -7,7 +7,6 @@ from jax import jacfwd, jacrev
 import jax.numpy as jnp
 import time
 
-
 import matplotlib.pyplot as plt
 
 
@@ -42,7 +41,7 @@ def main():
     t = 0.5
 
     t0 = time.time()
-    np.array(jacfwd(f)(x))
+    np.array(jacfwd(f)(x)) # convert to numpy in case JAX does something weird with async dispatch
     t1 = time.time()
     f_jacfwd_times.append(t1 - t0)
 
