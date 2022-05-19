@@ -1,5 +1,5 @@
 # jax-tutorial
-A tutorial on JAX.
+A tutorial on [JAX](https://jax.readthedocs.io/en/latest/).
 
 # Conda environment stuff
 Before doing anything, run `conda env create -f environment.yml`.
@@ -10,4 +10,5 @@ Before doing anything, run `conda env create -f environment.yml`.
 `environment.yml`: Conda environment for this project. \
 `tutorial.ipynb`: Self-contained Jupyter Notebook containing lots of JAX demos; cells must be run in order! \
 `fwd_rev_comparison.py`: Experiment demonstrating when to use foward vs reverse mode differentiation for functions with Jacobians of different sizes. To run: `python fwd_rev_comparison.py`, will save results to `fwd_rev_comparison.png`. \
-`jit_comparison.py`: Experiment demonstrating performance boost when jitting. To run: `python jit_comparison.py`, will save results in `jit_comparison.png`. \
+`jit_comparison.py`: Experiment demonstrating performance boost when jitting a simple function. To run: `python jit_comparison.py`, will save results in `jit_comparison.png`. \
+`render_comparison.py`: Experiment demonstrating performance boost when jitting Bezier render function. To run: `python render_comparison.py`, will save results in `render_jit_comparison.png`. \

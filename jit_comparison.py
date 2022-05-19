@@ -38,7 +38,7 @@ def main():
 
   f_jnp_jitted = jit(f_jnp) # jitting is so easy!
 
-  for i in range(1000):
+  for _ in range(1000):
     Ihat = random.normal(subkey, shape = (n, n))
     key, subkey = random.split(key)
 
@@ -51,7 +51,7 @@ def main():
     np_times.append(t1 - t0)
 
     t0 = time.time()
-    f_jnp(Ihat, I)
+    np.array(f_jnp(Ihat, I))
     t1 = time.time()
     jnp_times.append(t1 - t0)
 
