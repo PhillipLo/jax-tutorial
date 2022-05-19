@@ -2,7 +2,7 @@
 A tutorial on [JAX](https://jax.readthedocs.io/en/latest/).
 
 # Conda environment stuff
-Before doing anything, run `conda env create -f environment.yml`.
+Before doing anything, run `conda env create -f environment.yml`. Note that this version of JAX breaks on M1 Mac devices.
 
 # Files
 `README.md`: That's me! \
