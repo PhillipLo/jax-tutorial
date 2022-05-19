@@ -183,6 +183,7 @@ def main():
     t1 = time.time()
     jnp_jitted_times.append(t1 - t0)
 
+  # discard first 10 runs to account for compilation burn-in time
   np_avg = np.mean(np_times[10:])
   jnp_avg = np.mean(jnp_times[10:])
   jnp_jitted_avg = np.mean(jnp_jitted_times[10:])
